@@ -12,6 +12,14 @@ const nunito = Nunito({
 });
 
 // for other fonts , just change the 'nunito' with other name..
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body className={robotomono.className}>{children}</body> // here replace robotomono with your varibale name created above
+    </html>
+  );
+}
 ```
 
 ### 2) Add following code in global.css file
